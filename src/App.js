@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Sticky from './basic/Sticky';
+
+import Location from './component/Location';
+import Calendar from './component/Calendar';
+import MealTime from './component/MealTime';
+import DateLabel from './component/DateLabel';
+import Foods from './component/Foods';
+import Cart from './component/Cart';
+import LocationModal from './component/LocationModal';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    	<Sticky top padding="16px">
+	      <Location />
+	      <Calendar />
+	      <MealTime />
+    	</Sticky>
+      <DateLabel />
+      <Foods />
+      <Cart />
+      <LocationModal />
     </div>
   );
 }
