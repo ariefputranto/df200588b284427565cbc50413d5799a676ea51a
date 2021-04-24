@@ -9,11 +9,11 @@ const generateRating = (rate) => {
   for (var i = 1; i <= 5; i++) {
     rate = parseFloat(rate)
     if (rate >= i) {
-      rating.push(<Image src={ FullStar } />)
+      rating.push(<Image src={ FullStar } key={ i } />)
     } else if (rate >= (parseInt(i - 1) + 0.5)) {
-      rating.push(<Image src={ HalfStar } />)
+      rating.push(<Image src={ HalfStar } key={ i } />)
     } else {
-      rating.push(<Image src={ EmptyStar } />)
+      rating.push(<Image src={ EmptyStar } key={ i } />)
     }
   }
 

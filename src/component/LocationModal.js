@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 
 import Sticky from '../basic/Sticky'
 import Image from '../basic/Image'
@@ -10,7 +10,6 @@ import Input from '../basic/Input'
 import LocationModalItem from '../component/LocationModalItem'
 
 import CloseIcon from '../images/close.svg'
-import ExpandIcon from '../images/expand-icon.svg'
 
 import { StoreContext } from '../storage/Store';
 

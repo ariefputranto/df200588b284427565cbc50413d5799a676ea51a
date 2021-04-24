@@ -29,12 +29,12 @@ const Button = styled.a`
     border-radius: 8px;
   `}
 
-  ${props => props.type && props.type == "lunch" && css`
+  ${props => props.type && props.type === "lunch" && css`
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   `}
 
-  ${props => props.type && props.type == "dinner" && css`
+  ${props => props.type && props.type === "dinner" && css`
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
   `}
